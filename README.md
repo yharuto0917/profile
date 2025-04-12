@@ -1,2 +1,1 @@
-# profile-site
-このリポジトリはyharuto.profile.github.ioのサイトを構築するためのリポジトリである
+# profile.github.io
