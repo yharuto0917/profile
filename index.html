@@ -1,3 +1,4 @@
+/profile-site/index.html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,13 +7,11 @@
     <title>自己紹介 - [あなたのハンドルネーム]</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* 基本のフォント設定 */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #e0e5ec; /* ニューモフィズムに適した背景色 */
+            background-color: #e0e5ec;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,7 +19,6 @@
             padding: 2rem;
         }
 
-        /* ニューモフィズム（外側） */
         .neumorphism-outer {
             border-radius: 50px;
             background: #e0e5ec;
@@ -28,7 +26,6 @@
                         -9px -9px 16px #ffffff;
         }
 
-        /* ニューモフィズム（内側・凹み） */
         .neumorphism-inner {
             border-radius: 50px;
             background: #e0e5ec;
@@ -36,23 +33,21 @@
                         inset -7px -7px 14px #ffffff;
         }
 
-        /* グラスモフィズム */
         .glassmorphism {
-            background: rgba(255, 255, 255, 0.2); /* 半透明の背景 */
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px); /* 背景のぼかし */
-            -webkit-backdrop-filter: blur(5px); /* Safari用 */
-            border: 1px solid rgba(255, 255, 255, 0.3); /* わずかな境界線 */
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
-        /* プロフィール写真のスタイル */
         .profile-img-container {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            padding: 5px; /* ニューモフィズムの影が見えるように少しパディング */
-            margin: 0 auto; /* 中央揃え */
+            padding: 5px;
+            margin: 0 auto;
         }
 
         .profile-img {
@@ -62,29 +57,24 @@
             border-radius: 50%;
         }
 
-        /* SNSアイコンのスタイル */
         .social-icon svg {
             width: 24px;
             height: 24px;
-            fill: currentColor; /* 親要素の色を継承 */
+            fill: currentColor;
             transition: transform 0.3s ease;
         }
         .social-icon:hover svg {
-            transform: scale(1.1); /* ホバー時に少し拡大 (スケール調整) */
+            transform: scale(1.1);
         }
-        /* --- 変更点 --- */
         .social-icon {
-             /* 通常時は浮き出る効果 (凸) */
              box-shadow: 5px 5px 10px #a3b1c6,
                         -5px -5px 10px #ffffff;
-             transition: box-shadow 0.3s ease; /* transitionを追加して滑らかに */
+             transition: box-shadow 0.3s ease;
          }
         .social-icon:hover {
-             /* ホバー時に凹む効果 */
              box-shadow: inset 3px 3px 6px #a3b1c6,
                         inset -3px -3px 6px #ffffff;
         }
-        /* --- 変更点ここまで --- */
     </style>
 </head>
 <body>
@@ -137,10 +127,5 @@
         </section>
 
     </div>
-
-    <script>
-        // ここにJavaScriptコードを追加できます
-        // 例: console.log("自己紹介サイトが読み込まれました！");
-    </script>
 </body>
 </html>
