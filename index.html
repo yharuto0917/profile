@@ -118,6 +118,7 @@
             overflow-x: auto;
             gap: 1rem; /* 画像間のスペース */
             padding: 1rem 0; /* 上下のパディング */
+            scroll-snap-type: x mandatory; /* スナップを有効化 */
             /* スクロールバーのスタイル（任意） */
             scrollbar-width: thin;
             scrollbar-color: #a3b1c6 #e0e5ec;
@@ -145,6 +146,7 @@
             height: auto;
             border-radius: 16px;
             object-fit: cover;
+            scroll-snap-align: center; /* 中央にスナップ */
         }
 
         @media (max-width: 768px) {
