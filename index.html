@@ -112,6 +112,46 @@
                 font-size: 0.75rem;
             }
         }
+
+        .photo-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem; /* 画像間のスペース */
+            padding: 1rem 0; /* 上下のパディング */
+            /* スクロールバーのスタイル（任意） */
+            scrollbar-width: thin;
+            scrollbar-color: #a3b1c6 #e0e5ec;
+        }
+
+        .photo-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .photo-container::-webkit-scrollbar-track {
+            background: #e0e5ec;
+            border-radius: 10px;
+        }
+
+        .photo-container::-webkit-scrollbar-thumb {
+            background-color: #a3b1c6;
+            border-radius: 10px;
+            border: 2px solid #e0e5ec;
+        }
+
+        .photo-item {
+            flex: 0 0 auto; /* 画像が縮まないように */
+            width: 80%; /* コンテナに対する画像の幅 */
+            max-width: 300px; /* 画像の最大幅 */
+            height: auto;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .photo-item {
+                width: 90%; /* スマホ表示での幅調整 */
+            }
+        }
     </style>
 </head>
 <body>
@@ -155,11 +195,13 @@
                 <li>Google Pixel 9 Pro with Gemini</li>
                 <li>Google Pixel 9a with Gemini</li>
             </ul>
-            <div class = "glassmorphism m-3">
-                <div class="photo">
-                    <img src="image/Pixel_Portfolio.png" alt="Google Pixel 9 Pro" class="photo"
-                        onerror="this.onerror=null; this.src='https://placehold.co/150x150/cccccc/ffffff?text=Err';">
-                </div>
+            <div class="photo-container mt-4">
+                <img src="image/Pixel_Portfolio.png" alt="Google Pixel 9 Pro" class="photo-item"
+                     onerror="this.onerror=null; this.src='https://placehold.co/300x200/cccccc/ffffff?text=Err';">
+                <img src="image/pixel9_another_view.png" alt="Google Pixel 9 Another View" class="photo-item"
+                     onerror="this.onerror=null; this.src='https://placehold.co/300x200/cccccc/ffffff?text=Err';">
+                <img src="image/pixel9a_image.png" alt="Google Pixel 9a" class="photo-item"
+                     onerror="this.onerror=null; this.src='https://placehold.co/300x200/cccccc/ffffff?text=Err';">
             </div>
         </section>
 
